@@ -1,0 +1,27 @@
+apiVersion: v2
+name: ffc-demo-umbrella
+description: A Helm chart for Kubernetes
+type: application
+version: 1.0.0
+dependencies:
+  - name: ffc-demo-web
+    version: 1.0.0
+    repository: file://../../ffc-demo-web/helm/ffc-demo-web
+  - name: ffc-demo-api-gateway
+    version: 1.0.0
+    repository: file://../../ffc-demo-api-gateway/helm/ffc-demo-api-gateway
+  - name: ffc-demo-user-service
+    version: 1.0.0
+    repository: file://../../ffc-demo-user-service/helm/ffc-demo-user-service
+  - name: ffc-demo-claim-service
+    version: 1.0.0
+    repository: file://../../ffc-demo-claim-service/helm/ffc-demo-claim-service
+  - name: ffc-demo-payment-service
+    version: 1.0.0
+    repository: file://../../ffc-demo-payment-service/helm/ffc-demo-payment-service
+  - name: ffc-demo-payment-service-core
+    version: 1.0.0
+    repository: file://../../ffc-demo-payment-service-core/helm/ffc-demo-payment-service-core
+  - name: ffc-demo-calculation-service
+    version: 1.0.0
+    repository: file://../../ffc-demo-calculation-service/helm/ffc-demo-calculation-service
